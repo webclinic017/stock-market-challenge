@@ -1,1 +1,1 @@
-web: gunicorn -w 3 -k uvicorn.workers.UvicornWorker stock-market-challenge.main:app
+web: uvicorn stock-market-challenge.main:app
