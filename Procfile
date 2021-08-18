@@ -1,1 +1,1 @@
-web: python main.py
+web: python stock-market-challenge/main.py

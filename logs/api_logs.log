@@ -1,0 +1,8 @@
+2021-08-17 21:39:12.117 | INFO     | uvicorn.server:serve:84 - Started server process [13519]
+2021-08-17 21:39:12.117 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-08-17 21:39:12.117 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-08-17 21:39:12.118 | INFO     | uvicorn.server:_log_started_message:217 - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2021-08-17 21:39:15.434 | INFO     | uvicorn.server:shutdown:263 - Shutting down
+2021-08-17 21:39:15.535 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-08-17 21:39:15.537 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-08-17 21:39:15.537 | INFO     | uvicorn.server:serve:94 - Finished server process [13519]

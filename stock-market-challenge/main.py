@@ -125,6 +125,10 @@ async def check_credentials(token: str = Depends(oauth2_scheme)):
             raise credentials_exception
 
 
+@app.get("/")
+async def root():
+    return {"msg": "stock market challenge"}
+
 @app.post("/sign-up", status_code=status.HTTP_201_CREATED)
 async def sign_up(user_to_register: UserInDB):
     """Endpoint to register a new user. Both username and email address must be unique"""
