@@ -1,1 +1,1 @@
-web: uvicorn stock-market-challenge.main:app
+web: python main.py
