@@ -242,9 +242,17 @@ async def test_ri():
 if __name__ == "__main__":
     from uvicorn import Config, Server
     from logs.utils import setup_logging, LOG_LEVEL
+    import os
+    ON_HEROKU = os.environ.get('ON_HEROKU')
+
+    if ON_HEROKU:
+        # get the heroku port
+        port = int(os.environ.get('PORT', 17995)) 
+    else:
+        port = 8000
 
     server = Server(
-        Config("main:app", host="0.0.0.0", log_level=LOG_LEVEL, reload=True),
+        Config("main:app", host="0.0.0.0", port=port, log_level=LOG_LEVEL, reload=True),
     )
 
     # setup logging last, to make sure no library overwrites it
