@@ -4,7 +4,7 @@ API service to get the latest stock market information. To consume the API, it's
 
 ## Postman collection
 
-In the link below you can test the endpoint for both local and Heroku deploy
+In the link below you can test the endpoint for both local and Heroku deployments
 
 `https://www.getpostman.com/collections/7a49b5ffd6f4e52e9125`
 
@@ -36,11 +36,11 @@ The app is running in https://stock-market-chall.herokuapp.com
 
 ## Endpoint
 
-The service has three endpoints. One for sign up, a second one to log in and get a token to use the last endpoint which is used to retrieve stock market information.
+The service has three endpoints. One for sign up, a second one for log in to get a token to consume the last endpoint which is used to retrieve stock market information.
 
 ### /sign-up - POST
 
-The endpoint needs a request body with user information to save the data to a database. Username and email address must be unique. The required json has the following structure:
+The endpoint needs a request body with user information to save the data into a database. Username and email address must be unique. The required json has the following structure:
 
 ```
 {
